@@ -1,0 +1,25 @@
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 40px;
+
+  .nav-list {
+    display: flex;
+  }
+
+  .nav-item {
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    font-family: Poppins;
+
+    &:hover{
+        color: purple
+    }
+  }
+  a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
