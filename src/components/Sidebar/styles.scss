@@ -3,7 +3,7 @@
   bottom: 0px;
   left: 50px;
 
-  .social {
+  .sidebar__social {
     list-style: none;
     margin: 0;
     padding-inline-start: 0;
@@ -17,16 +17,8 @@
       background-color: black;
     }
   }
-  a {
-    color: inherit;
+  .sidebar__social-item {
     text-decoration: none;
-  }
-
-  
-    .icon {
-      padding: 13px;
-    
-      &:hover {
-        color:purple}
+    padding: 10px;
   }
 }

@@ -4,30 +4,35 @@ import "./styles.scss";
 export const Sidebar = () => {
   return (
     <div className="sidebar">
-      <ul className="social">
-        <li>
+      <ul className="sidebar__social">
+        <li className="sidebar__social-item">
           <a
+            className="social-item-anchor"
             href="https://github.com/agatamostowik"
             target="_blank"
             rel="noreferrer"
           >
-            <FiGithub className="icon" />
+            <FiGithub />
           </a>
         </li>
-        <li>
+        <li className="sidebar__social-item">
           <a
+            className="social-item-anchor"
             href="https://www.linkedin.com/in/agata-mostowik/"
             target="_blank"
             rel="noreferrer"
           >
-            <FiLinkedin className="icon" />
+            <FiLinkedin />
           </a>
         </li>
-        <li>
-          <a href="https://www.instagram.com/agata.mostowik/"
-          target="_blank"
-          rel="noreferrer">
-            <FiInstagram className="icon" />
+        <li className="sidebar__social-item">
+          <a
+            className="social-item-anchor"
+            href="https://www.instagram.com/agata.mostowik/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FiInstagram />
           </a>
         </li>
       </ul>

@@ -1,43 +1,47 @@
-.home-page {
-  height: 100%;
+.home__page {
   width: 100%;
-  position: absolute;
-  display:flex;
+  display: flex;
   justify-content: center;
-  top:15rem;
+  align-items: center;
 
+  .home__logo {
+    display: flex;
+    justify-content: center;
+  }
 
-  .home-text {
+  .home__text {
     text-align: center;
     z-index: 1;
   }
 
-  .home-name {
+  .home__name {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.6rem;
+    margin-top: 8px;
   }
 
-  .rotate-vertical {
+  .home__rotate-vertical {
     display: inline-block;
     transform: rotate(180deg);
     letter-spacing: 0;
   }
 
-  .flip-horizontal {
+  .home__flip-horizontal {
     display: inline-block;
     transform: scale(-1, 1);
     letter-spacing: 0;
   }
 
-  h2 {
+  .home__underline {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 0.7rem;
     letter-spacing: 0.3rem;
+    padding-top: 23px;
   }
+
   .rectangle {
-    position:absolute;
-    top: 13px;
+    position: absolute;
   }
 
   $dasharray: 970;
@@ -49,7 +53,7 @@
 
   $dasharray: 920;
   svg#rectangle {
-    height:60px;
+    height: 60px;
     #stroke {
       width: $height;
       height: $width;
@@ -57,7 +61,7 @@
       stroke-width: 0.2rem;
       stroke-dasharray: $dasharray;
       fill: none;
-      animation: sketchIn 5s 0.3s cubic-bezier(0.19, 1, 0.22, 1) ,
+      animation: sketchIn 5s 0.3s cubic-bezier(0.19, 1, 0.22, 1),
         fillIn 1s 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 
       @keyframes sketchIn {

@@ -12,9 +12,13 @@ export const Navbar = () => {
           <Link to="/about">About</Link>
         </li>
         <li className="nav-item">
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li className="nav-item">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+      <button className="button">Resume</button>
     </nav>
   );
 };

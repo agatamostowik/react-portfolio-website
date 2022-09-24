@@ -1,0 +1,14 @@
+.about__page {
+  display: flex;
+  margin-top: 30%;
+  justify-content: space-between;
+
+  .about__image-wrapper {
+    display: flex;
+    height: 360px;
+    padding: 20px 0;
+  }
+  .about__title {
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,50 @@
+@use "src/index";
+.projects__wrapper {
+  .projects__site-title {
+    padding-bottom: 40px;
+  }
+
+  .projects__list {
+    display: block;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .projects__container {
+    display: flex;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .projects__image-box {
+    border: 1px solid blue;
+    width: 60%;
+    border-radius: 2px;
+  }
+  .projects__name {
+    text-align: end;
+    padding: 15px 0px;
+  }
+  .projects__text-box {
+    width: 40%;
+  }
+  .projects__description {
+    z-index: 1;
+    position: relative;
+    margin-left: -50px;
+    padding: 20px;
+    background-color: index.$grey;
+    border-radius: 2px;
+  }
+  .projects__tech-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 25px 0 10px;
+  }
+  .projects__links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
