@@ -1,14 +1,70 @@
+@use "src/index";
 .about__page {
+  justify-content: center;
+  min-height: 980px;
+  flex-direction: column;
   display: flex;
-  margin-top: 30%;
-  justify-content: space-between;
+
+  .about__section {
+    display: flex;
+  }
 
   .about__image-wrapper {
+    background-color: white;
     display: flex;
     height: 360px;
     padding: 20px 0;
   }
   .about__title {
     padding-bottom: 30px;
+    // background: rgb(216, 224, 174);
+  }
+  .about__paragraph {
+    // background: rgb(124, 147, 124);
+  }
+  .about__techstack {
+    padding: 130px 0;
+  }
+  .about__techstack-title {
+    text-align: center;
+  }
+  .about__techstack-list {
+    display: flex;
+    list-style: none;
+    padding: 20px 50px;
+    margin: 0;
+    justify-content: space-evenly;
+    background-color: white;
+  }
+
+  .a {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .b {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: white;
+    color: index.$yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about__techstack-item {
+    position: relative;
+    cursor: pointer;
+    &:hover .b {
+      opacity: 1;
+    }
   }
 }

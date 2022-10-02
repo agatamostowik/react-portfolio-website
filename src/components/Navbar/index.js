@@ -18,7 +18,7 @@ export const Navbar = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-      <button className="button">Resume</button>
+      <button className="nav-item button">Resume</button>
     </nav>
   );
 };

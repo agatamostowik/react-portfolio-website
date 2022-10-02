@@ -20,5 +20,9 @@
   .sidebar__social-item {
     text-decoration: none;
     padding: 10px;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
 }
